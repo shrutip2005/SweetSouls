@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class collect : MonoBehaviour
+{
+    //private string HOLDER_TAG ="Holder";
+
+
+     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
+           
+    }
+}
+
